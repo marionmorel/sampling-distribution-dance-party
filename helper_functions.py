@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import stats
 import seaborn as sns
-import codecademylib3
 
 def choose_statistic(x, sample_stat_text):
   # calculate mean if the text is "Mean"
