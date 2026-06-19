@@ -13,7 +13,10 @@ def choose_statistic(x, sample_stat_text):
     return np.min(x)
   # calculate variance if the text is "Variance"
   elif sample_stat_text == "Variance":
-    return np.var(x)
+
+# Task 12
+  # return np.var(x)
+    return np.var(x, ddof=1)
   # if you want to add an extra stat
   # raise error if sample_stat_text is not "Mean", "Minimum", or "Variance"
   else:

@@ -13,3 +13,28 @@ print(spotify_data.head())
 
 # Task 3
 song_tempos = spotify_data['tempo']
+
+# Task 5
+population_distribution(song_tempos)
+# The population distribution is normal, a little bit skewed to the right
+
+# Task 6
+sampling_distribution(song_tempos, 30, "Mean")
+
+# Task 7
+# The sampling distribution of the sample means and the population mean are very similar, which means the mean is an unbiased estimator of the population
+
+# Task 8
+sampling_distribution(song_tempos, 30, "Minimum")
+
+# Task 9
+# The sampling distribution of the sample minimums is a lot higher than the population minimum, which means the minimum is a biased estimator of the population
+
+# Task 10
+sampling_distribution(song_tempos, 30, "Variance")
+
+# Task 11
+# The sampling distribution of the sample variances is lower than the population variance, which means the variance is a biased estimator of the population
+
+# Task 12
+# After changing the code in helper_functions.py, the variance still appear to be an unbiased estimator of the population as the sampling distribution of the sample variances and the population variance are very similar
