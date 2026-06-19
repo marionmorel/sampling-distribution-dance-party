@@ -30,11 +30,14 @@ Create a variable called <code>song_tempos</code> that contains the <code>tempo<
 #### Helper Functions
 
 4. Let’s investigate the helper functions we will use in the following sections. A file called **helper_functions.py** should be opened in the workspace for you. It contains three functions: <code>choose_statistic()</code>, <code>population_distribution()</code>, and <code>sampling_distribution()</code>. The code in these functions is similar to what we saw in the previous lesson, but let’s explore these together.
+   
 <code>choose_statistic()</code> allows us to choose a statistic we want to calculate for our sampling and population distributions. It contains two parameters:
 * <code>x</code>: An array of numbers
 * <code>sample_stat_text</code>: A string that tells the function which statistic to calculate on x. It takes on three values: “Mean”, “Minimum”, or “Variance”.
+  
 <code>population_distribution()</code> allows us to plot the population distribution of a dataframe with one function call. It takes the following parameter:
 * <code>population_data</code>: the dataframe being passed into the function
+  
 <code>sampling_distribution()</code> allows us to plot a simulated sampling distribution of a statistic. The simulated sampling distribution is created by taking random samples of some size, calculating a particular statistic, and plotting a histogram of those sample statistics. It contains three parameters:
 * <code>population_data</code>: the dataframe being sampled from
 * <code>samp_size</code>: the size of each sample
