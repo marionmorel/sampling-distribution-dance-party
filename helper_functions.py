@@ -11,6 +11,9 @@ def choose_statistic(x, sample_stat_text):
   # calculate minimum if the text is "Minimum"
   elif sample_stat_text == "Minimum":
     return np.min(x)
+# Task 17
+  elif sample_stat_text == 'Maximum':
+    return np.max(x)
   # calculate variance if the text is "Variance"
   elif sample_stat_text == "Variance":
 
